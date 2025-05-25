@@ -9,12 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="Images/favicon.png" type="image/png">
     <style>
+        /* :root {
+            --primary: #6d5472;
+            --secondary: #8ca08c;
+            --dark: #3a3532;
+            --light: #f7f5f2;
+            --accent: #c9a14a;
+            --sidebar-width: 90px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        } */
         :root {
-            --primary: #008080;
-            --secondary: #005757;
-            --dark: #22223b;
-            --light: #f8f9fa;
-            --accent: #ff6584;
+            --primary: #5d4a66;
+            --secondary: #7a9a7a;
+            --dark: #2d2724;
+            --light: #ffffff;
+            --accent: #d4af37;
             --sidebar-width: 90px;
             --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
@@ -99,13 +108,12 @@
             background: var(--light);
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(120deg, #e0f7fa 0%, #f8f9fa 100%);
+            background: var(--light); /* Use the main background color */
             position: relative;
         }
 
@@ -187,6 +195,7 @@
         }
 
         @keyframes float {
+
             0%,
             100% {
                 transform: translateY(0);
@@ -493,7 +502,8 @@
             }
 
             .sidebar .social {
-                flex-direction: column !important; /* Force vertical */
+                flex-direction: column !important;
+                /* Force vertical */
                 margin-top: 0;
                 align-items: center;
             }
@@ -581,12 +591,7 @@
                     strong foundation in mathematics and analytical problem-solving. My journey in data science
                     began with my fascination for patterns and my love for transforming raw numbers into meaningful
                     stories.</p>
-                <!-- Data Science Animation Start -->
-                <div style="display: flex; justify-content: center; margin: 24px 0;">
-                    <img src="https://camo.githubusercontent.com/66066b22abacaf358032bb15ab64fe18654e8d00e2ed4d07747d89eccb6596ae/68747470733a2f2f63646e622e61727473746174696f6e2e636f6d2f702f6173736574732f696d616765732f696d616765732f3032382f3939312f3939392f6f726967696e616c2f616e6e612d68617672796c79756b682d2e6769663f31353936313235313132"
-                        alt="Data Science Animation" style="max-width: 340px; width: 100%; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
-                </div>
-                <!-- Data Science Animation End -->
+
                 <p>Currently pursuing my MSc in Industrial Mathematics with Computer Applications at Savitribai
                     Phule Pune University, I've developed expertise in Python programming, statistical analysis,
                     machine learning algorithms, and data visualization techniques.</p>
@@ -605,7 +610,8 @@
                         <div class="date">2023 – 2025 (Expected)</div>
                         <p>Department of Mathematics, Savitribai Phule Pune University, Pune</p>
                         <p><strong>Key Courses:</strong> Advanced Data Structures, Machine Learning, Statistical
-                            Methods, Optimization Techniques, Data Mining, Probability and Statistics, Linear Algebra</p>
+                            Methods, Optimization Techniques, Data Mining, Probability and Statistics, Linear Algebra
+                        </p>
                     </div>
                     <div class="timeline-item">
                         <h3>B.Sc. - Mathematics</h3>
@@ -676,13 +682,16 @@
                         <h3>AI/ML Engineer Trainee</h3>
                         <div class="date">Feb 2025 – Present</div>
                         <p>Prushal Technology Pvt. Ltd., Pune</p>
-                        <p>Working on voice-enabled chatbots—one rule-based and one LLM-based—focusing on speech recognition, NLP, and optimizing answers for real-time user interaction.</p>
+                        <p>Working on voice-enabled chatbots—one rule-based and one LLM-based—focusing on speech
+                            recognition, NLP, and optimizing answers for real-time user interaction.</p>
                     </div>
                     <div class="timeline-item">
                         <h3>Data Analyst Intern</h3>
                         <div class="date">May 2024 – July 2024</div>
                         <p>Blue Planet Info Solution India Pvt. Ltd., Pune</p>
-                        <p>Collected and curated data from various online sources using both manual methods and web tools. Performed data cleaning and organization to ensure high quality and accuracy. Collaborated closely with a team to process and achieve project goals effectively.</p>
+                        <p>Collected and curated data from various online sources using both manual methods and web
+                            tools. Performed data cleaning and organization to ensure high quality and accuracy.
+                            Collaborated closely with a team to process and achieve project goals effectively.</p>
                     </div>
                 </div>
             </div>
@@ -700,7 +709,8 @@
                             <span class="project-tag">Gemini API</span>
                             <span class="project-tag">NLP</span>
                         </div>
-                        <p>Built and deployed a voice-enabled chatbot using Gemini API and rule-based logic to provide company info, services, and contact details.</p>
+                        <p>Built and deployed a voice-enabled chatbot using Gemini API and rule-based logic to provide
+                            company info, services, and contact details.</p>
                         <!-- Add GitHub link if available -->
                     </div>
                     <div class="project-card">
@@ -711,9 +721,13 @@
                             <span class="project-tag">Scikit-learn</span>
                             <span class="project-tag">XGBoost</span>
                         </div>
-                        <p>Customizable ML pipeline for regression tasks, incorporating data preprocessing, feature selection, model training, and evaluation. Supports Random Forest, XGBoost, SVR, and hyperparameter tuning with grid search. Evaluates models using MSE, RMSE, MAE, and R² Score.</p>
+                        <p>Customizable ML pipeline for regression tasks, incorporating data preprocessing, feature
+                            selection, model training, and evaluation. Supports Random Forest, XGBoost, SVR, and
+                            hyperparameter tuning with grid search. Evaluates models using MSE, RMSE, MAE, and R² Score.
+                        </p>
                         <div class="project-links">
-                            <a href="https://github.com/AkankshaShivale/End-to-End-Regression-Pipeline" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/AkankshaShivale/End-to-End-Regression-Pipeline"
+                                target="_blank"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                     <div class="project-card">
@@ -724,9 +738,11 @@
                             <span class="project-tag">Flask</span>
                             <span class="project-tag">Machine Learning</span>
                         </div>
-                        <p>Flask-based web application that predicts flight ticket prices using machine learning models trained on various flight features.</p>
+                        <p>Flask-based web application that predicts flight ticket prices using machine learning models
+                            trained on various flight features.</p>
                         <div class="project-links">
-                            <a href="https://github.com/AkankshaShivale/Flight-Price-Predictor" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/AkankshaShivale/Flight-Price-Predictor" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                     <div class="project-card">
@@ -741,7 +757,8 @@
                         <p>Interactive web app to analyze group and individual chats with visualizations of message
                             statistics, activity patterns, and emoji usage.</p>
                         <div class="project-links">
-                            <a href="https://github.com/AkankshaShivale/WhatsApp-Chat-Analysis" class="project-link" target="_blank">
+                            <a href="https://github.com/AkankshaShivale/WhatsApp-Chat-Analysis" class="project-link"
+                                target="_blank">
                                 <i class="fab fa-github"></i> Code
                             </a>
                         </div>
@@ -760,7 +777,8 @@
                     <i class="fas fa-download"></i> Download Resume
                 </a>
                 <br>
-                <iframe src="AkankshaShivaleResumeWord.pdf" width="90%" height="500px" style="border:1px solid #ccc; margin-top:20px; border-radius:12px;"></iframe>
+                <iframe src="AkankshaShivaleResumeWord.pdf" width="90%" height="500px"
+                    style="border:1px solid #ccc; margin-top:20px; border-radius:12px;"></iframe>
             </div>
         </section>
         <!-- Contact Section -->
